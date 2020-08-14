@@ -3,7 +3,7 @@ pkgs <- c("tidyverse", "sf", "sp", "ggmap", "ggspatial", "ggrepel")
 lapply(pkgs, library, character.only = T)
 
 # import main sf object containing geometry
-main_sf <- read_rds("Data/Spatial data/main_sf.rds")
+main_sf <- read_rds("Data/Spatial_data//main_sf.rds")
 
 # transform sf to sp
 main_sp <- st_zm(main_sf) %>%
